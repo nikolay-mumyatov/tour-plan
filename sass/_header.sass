@@ -1,72 +1,74 @@
 .header 
   background: #ffffff
-.header__top
-  display: flex
-  flex-wrap: wrap
-  padding: 40px 0
-  align-items: center
+  &__top
+    display: flex
+    flex-wrap: wrap
+    padding: 40px 0
+    align-items: center
+
 .logo
   flex-basis: 25%
-.logo__img 
-  max-width: 177px
+  &__img 
+    max-width: 177px
+
 .search 
   display: flex
   position: relative
   z-index: 1
   display: flex
   overflow: hidden
-.search__form-item
-  width: 350px
-  height: 40px
-  padding-left: 23px
-  background-color: $light-color
-  border: none
-  border-radius: 6px
-  font-size: 12px
-  line-height: 15px
-.button
-  background: #EC1F46
-  border: none
-  cursor: pointer
-.search__button
-  z-index: 0
-  position: absolute
-  right: 0
-  top: 0
-  bottom: 0
-  padding: 12px 24px
-  border-radius: 0 6px 6px 0
-.user 
-  flex-basis: 43%
-  display: flex
-  justify-content: flex-end
-  align-items: center
+  &__form-item
+    width: 350px
+    height: 40px
+    padding-left: 23px
+    background-color: $light-color
+    border: none
+    border-radius: 6px
+    font-size: 12px
+    line-height: 15px
+  &__button
+    z-index: 0
+    position: absolute
+    right: 0
+    top: 0
+    bottom: 0
+    padding: 12px 24px
+    border-radius: 0 6px 6px 0
+    
 .avatar 
   border-radius: 50%
   width: 40px
   height: 40px
   object-fit: cover
-.user__avatar
-  margin-right: 18px
-.user__name 
-  text-decoration: none
-  cursor: pointer
-  font-size: 14px
-  line-height: 18px
-  +m-regular
+
+.user 
+  flex-basis: 43%
+  display: flex
+  justify-content: flex-end
+  align-items: center
+  &__avatar
+    margin-right: 18px
+  &__name 
+    text-decoration: none
+    cursor: pointer
+    font-size: 14px
+    line-height: 18px
+    +m-regular
+
 .header-nav 
   background: #0A223D
   padding: 31px 0
+
 .nav__menu
   display: flex
   justify-content: space-between
   padding: 0
-.nav__menu-item
-  list-style: none
-.nav__menu-link
-  text-decoration: none
-  color: $white-font
-  text-transform: uppercase
-  +m-bold
-  font-size: 14px
-  line-height: 18px
+  &-item
+    list-style: none
+  &-link
+    text-decoration: none
+    color: $white-font
+    text-transform: uppercase
+    +m-bold
+    font-size: 14px
+    line-height: 18px
