@@ -35,6 +35,9 @@
     &__top
       padding: 30px 0
     &-nav
+      display: none
+      position: fixed
+      width: 100%
       padding: 31px 0
   .burger
     display: flex
@@ -71,11 +74,17 @@
 
 @media  (max-width: 630px)
   .container
-    padding: 0 15px
+    padding: 0 10px
 
 @media (min-width: 300px) and (max-width: 480px)
+  .header
+    &__top
+      padding: 28px 0
   .nav
     &-search
       .search__form
         &-item
           width: 250px
+  .logo
+    &__img
+      max-width: 99px 
