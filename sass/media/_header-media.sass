@@ -1,0 +1,81 @@
+@media (max-width: 1200px)
+  .container
+    max-width: 960px
+
+@media (max-width: 992px)
+  .container
+    max-width: 780px
+  .header
+    &__search
+      margin-left: 5%
+  .search
+    &__form-item
+      width: 340px
+
+@media (max-width: 810px)
+  .container
+    max-width: 700px
+  .header
+    &__top
+      padding: 30px 0
+  .logo
+    &__img
+      max-width: 133px
+  .header-nav
+    padding: 23px 0
+  .nav__menu
+    &-link
+      font-size: 12px
+      line-height: 15px
+
+@media (max-width: 730px)
+  .container
+    max-width: 600px
+  .header
+    &__top
+      padding: 30px 0
+    &-nav
+      padding: 31px 0
+  .burger
+    display: flex
+  .search, .user
+    display: none
+  .user__avatar
+    margin-right: 0
+    margin-bottom: 10px
+  .nav
+    &-wrapper
+      display: flex
+      flex-direction: column
+      justify-content: flex-start
+      height: 100%
+    &-user
+      display: flex
+      justify-content: center
+      align-items: center
+      flex-direction: column
+      margin-bottom: 27px
+      > .user__name
+        color: $white-font
+    &-search
+      display: flex
+      margin: 0 auto
+      margin-bottom: 39px
+    &__menu
+      justify-content: flex-start
+      flex-direction: column
+      align-items: center
+      &-item
+        &:not(last-child)
+          margin-bottom: 20px
+
+@media  (max-width: 630px)
+  .container
+    padding: 0 15px
+
+@media (min-width: 300px) and (max-width: 480px)
+  .nav
+    &-search
+      .search__form
+        &-item
+          width: 250px

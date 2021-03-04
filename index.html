@@ -13,16 +13,19 @@
     <header class="header">
       <div class="container">
         <div class="header__top">
-          <a href="#" class="logo">
-            <img
-              src="img/logo-horizontal.svg"
-              alt="logo: Best tour plan"
-              class="logo__img"
-            />
-          </a>
-          <!-- /.logo -->
+          <div class="header__logo">
+            <a href="#" class="logo">
+              <img
+                src="img/logo-horizontal.svg"
+                alt="logo: Best tour plan"
+                class="logo__img"
+              />
+            </a>
+            <!-- /.logo -->
+          </div>
+          <!-- /.header__logo -->
 
-          <div class="search">
+          <div class="search header__search">
             <form action="#" class="form search__form">
               <input
                 type="text"
@@ -49,37 +52,76 @@
             <a href="#" class="user__name">Nathan</a>
           </div>
           <!-- /.header-user -->
+          <button class="burger">
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+          </button>
+          <!-- /.burger -->
         </div>
         <!-- /.header-top -->
       </div>
       <!-- /.container -->
+
       <div class="header-nav">
         <div class="container">
-          <nav class="nav">
-            <ul class="nav__menu">
-              <li class="nav__menu-item">
-                <a href="#" class="nav__menu-link">All Deals</a>
-              </li>
-              <li class="nav__menu-item">
-                <a href="#" class="nav__menu-link">Hotels</a>
-              </li>
-              <li class="nav__menu-item">
-                <a href="#" class="nav__menu-link">Activities</a>
-              </li>
-              <li class="nav__menu-item">
-                <a href="#" class="nav__menu-link">Hotel Day Packages</a>
-              </li>
-              <li class="nav__menu-item">
-                <a href="#" class="nav__menu-link">Restaurants</a>
-              </li>
-              <li class="nav__menu-item">
-                <a href="#" class="nav__menu-link">Events</a>
-              </li>
-              <li class="nav__menu-item">
-                <a href="#" class="nav__menu-link">Rodrigues</a>
-              </li>
-            </ul>
-          </nav>
+          <div class="nav-wrapper">
+            <div class="user nav-user">
+              <img
+                src="img/user-avatar.jpg"
+                alt="avatar: user: Nathan"
+                class="avatar user__avatar"
+              />
+              <a href="#" class="user__name">Nathan</a>
+            </div>
+            <!-- /.header-user -->
+
+            <div class="search header__search nav-search">
+              <form action="#" class="form search__form">
+                <input
+                  type="text"
+                  class="search__form-item"
+                  placeholder="Search Location"
+                />
+              </form>
+              <button class="button search__button">
+                <img
+                  src="img/search.svg"
+                  alt="botton: Search"
+                  class="search__button-img"
+                />
+              </button>
+            </div>
+            <!-- /.header-search -->
+
+            <nav class="nav">
+              <ul class="nav__menu">
+                <li class="nav__menu-item">
+                  <a href="#" class="nav__menu-link">All Deals</a>
+                </li>
+                <li class="nav__menu-item">
+                  <a href="#" class="nav__menu-link">Hotels</a>
+                </li>
+                <li class="nav__menu-item">
+                  <a href="#" class="nav__menu-link">Activities</a>
+                </li>
+                <li class="nav__menu-item">
+                  <a href="#" class="nav__menu-link">Hotel Day Packages</a>
+                </li>
+                <li class="nav__menu-item">
+                  <a href="#" class="nav__menu-link">Restaurants</a>
+                </li>
+                <li class="nav__menu-item">
+                  <a href="#" class="nav__menu-link">Events</a>
+                </li>
+                <li class="nav__menu-item">
+                  <a href="#" class="nav__menu-link">Rodrigues</a>
+                </li>
+              </ul>
+            </nav>
+            <!-- /.nav -->
+          </div>
+          <!-- /.nav__wrapper -->
         </div>
         <!-- /.container -->
       </div>

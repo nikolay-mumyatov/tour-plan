@@ -1,17 +1,20 @@
-.header 
+.header
   background: #ffffff
   &__top
     display: flex
     flex-wrap: wrap
     padding: 40px 0
+    justify-content: space-between
     align-items: center
+  &__search
+    margin-right: auto
+    margin-left: 10%
 
 .logo
-  flex-basis: 25%
-  &__img 
+  &__img
     max-width: 177px
 
-.search 
+.search
   display: flex
   position: relative
   z-index: 1
@@ -21,6 +24,7 @@
     width: 350px
     height: 40px
     padding-left: 23px
+    padding-right: 75px
     background-color: $light-color
     border: none
     border-radius: 6px
@@ -34,30 +38,51 @@
     bottom: 0
     padding: 12px 24px
     border-radius: 0 6px 6px 0
-    
-.avatar 
+
+.avatar
   border-radius: 50%
   width: 40px
   height: 40px
   object-fit: cover
 
-.user 
-  flex-basis: 43%
+.user
   display: flex
   justify-content: flex-end
   align-items: center
   &__avatar
     margin-right: 18px
-  &__name 
+  &__name
     text-decoration: none
     cursor: pointer
     font-size: 14px
     line-height: 18px
     +m-regular
 
-.header-nav 
+.burger
+  display: none
+  flex-direction: column
+  justify-content: space-between
+  width: 16px
+  height: 11px
+  border: none
+  background-color: transparent
+  padding: 0
+  cursor: pointer
+
+  &__line
+    width: 16px
+    height: 1px
+    background-color: $black-font
+
+.header-nav
   background: #0A223D
   padding: 31px 0
+
+.nav
+  &-search
+    display: none
+  &-user
+    display: none
 
 .nav__menu
   display: flex
