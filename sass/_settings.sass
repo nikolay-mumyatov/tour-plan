@@ -8,11 +8,21 @@ body
   background-color: $light-color
   position: relative
 
+button
+  &:focus
+    outline: none
+
 .container
   max-width: 1110px
   margin: 0 auto
 
 .button
-  background: #EC1F46
+  background: $red-color
   border: none
   cursor: pointer
+
+.section-title
+  font-size: 36px
+  line-height: 45px
+  text-align: center
+  text-transform: uppercase

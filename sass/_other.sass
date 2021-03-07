@@ -1,0 +1,152 @@
+.other
+	padding: 40px 70px
+
+	&__img
+		width: 350px
+		height: 250px
+		border-radius: 8px 8px 0 0
+		object-fit: cover
+
+	&__offer
+		position: absolute
+		top: 26px
+		left: 0
+		padding: 4px 9px
+		border-radius: 0px 4px 4px 0px
+		color: $white-font
+		background: $red-color
+		font-size: 12px
+		line-height: 15px
+		&-big
+			padding: 8px 12px
+
+	&__text
+		margin-bottom: 34px
+		color: $white-font
+		font-size: 14px
+		line-height: 160.6%
+
+	&__location
+		&:before
+			content: ""
+			display: block
+			margin-right: 14px
+			background-image: url('../img/other/location.svg')
+			width: 14px
+			height: 14px
+
+	&__guest
+		&:before
+			content: ""
+			display: block
+			margin-right: 14px
+			background-image: url('../img/other/guest.svg')
+			width: 14px
+			height: 14px
+
+	&__room
+		&:before
+			content: ""
+			display: block
+			margin-right: 14px
+			background-image: url('../img/other/room.svg')
+			width: 14px
+			height: 14px
+
+	&__location,
+	&__guest,
+	&__room,
+		display: flex
+		font-size: 12px
+		line-height: 15px
+		color: $white-font
+		&:not(:last-child)
+			margin-bottom: 11px
+
+	&__button
+		color: $white-font
+
+.other-title
+	margin: 0 0 65px 0
+
+.grid-box
+	display: grid
+	grid-template-columns: repeat(3, 1fr)
+	grid-template-rows: repeat(2, 1fr)
+	// grid-auto-columns: minmax(100px, auto)
+	grid-gap: 30px
+
+.other-box
+
+.other-card
+	height: 500px
+	background: $blue-color
+	border-radius: 8px
+
+	&__big
+		grid-column: 1/3
+		display: flex
+		.other-card__description
+			padding: 46px 21px 30px 43px
+		.other__img
+			max-width: 366px
+			height: 500px
+			border-radius: 8px 0 0 8px
+
+	&__img
+		position: relative
+
+	&__description
+		padding: 30px 21px 25px 32px
+
+.other-stars
+	margin-bottom: 5px
+
+.stars
+
+	&-other
+
+.star
+
+.other-card-title
+	margin-bottom: 23px
+	color: $white-font
+	font-size: 18px
+	line-height: 23px
+	+m-bold
+	&__big
+		margin-bottom: 27px
+
+.other-card-address
+	margin-bottom: 24px
+	&__big
+		margin-bottom: 43px
+
+.other-book
+	display: flex
+	justify-content: space-between
+	align-items: center
+
+.other-card-price
+	display: flex
+	flex-wrap: wrap
+
+.price
+
+	&-old
+		margin-bottom: 5px
+		color: $white-font
+		font-size: 14px
+		line-height: 18px
+		text-decoration-line: line-through
+	&-now
+		width: 100%
+		color: $white-font
+		font-size: 24px
+		line-height: 30px
+		+m-bold
+.other__button
+	padding: 11px 27px
+	font-size: 14px
+	line-height: 19px
+	border-radius: 4px
