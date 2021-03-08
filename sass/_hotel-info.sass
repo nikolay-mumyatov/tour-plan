@@ -1,8 +1,14 @@
 .hotel-info
+	margin-bottom: 70px
 
 	&__wrapper
 		display: flex
 		flex-wrap: wrap
+		justify-content: space-between
+
+	&__content
+		display: flex
+		flex-direction: column
 		justify-content: space-between
 
 .swiper-container
@@ -52,32 +58,71 @@
 			background-image: url(../img/hotel-info/arrow-prev.svg)
 
 .options
+	min-width: 350px
+	padding: 29px 26px 26px 26px
 	border-radius: 8px
 	background: $blue-color
 
 	&__wrapper
+		display: flex
+		justify-content: space-between
+		align-items: center
 
-		&__price
+	&__price
+		margin-bottom: 9px
 
-		&__price--small
+	&__price--small
+		display: block
+		+n-regular
+		font-size: 10px
+		line-height: 14px
+		color: $white-font
 
-		&__price--price
+	&__price--price
+		font-size: 24px
+		line-height: 33px
+		+n-semibold
+		color: $white-font
 
-		&__guest
+	&__guest
 
-		&__booking
+	&__booking
+		display: flex
+		justify-content: space-between
+		margin-bottom: 17px
 
-		&__booking--quick
+	&__booking--quick
+		font-size: 18px
+		line-height: 25px
+		+n-semibold
+		color: $white-font
 
-		&__booking--tel
+	&__booking--tel
+		display: flex
+		align-items: center
+		font-size: 18px
+		line-height: 25px
+		+n-semibold
+		color: $white-font
+		text-decoration: none
+		&::before
+			content: ""
+			display: block
+			margin-right: 14px
+			background-image: url('../img/hotel-info/tel.svg')
+			width: 14px
+			height: 14px
 
-		&__button
+	&__button
+		width: 100%
+		padding: 13px 0
+		font-size: 14px
+		line-height: 19px
+		+n-semibold
+		border-radius: 4px
 
-.guest
-
-.room
-
-.button
 
 .map
-	border-radius: 8px
+	border-radius: 8px 8px 14px 14px
+	overflow: hidden
+	z-index: 10

@@ -9,6 +9,12 @@ const swiper = new Swiper(".swiper-container", {
   },
 
   autoplay: {
-    // delay: 5000,
+    delay: 5000,
   },
+
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
+
 });
