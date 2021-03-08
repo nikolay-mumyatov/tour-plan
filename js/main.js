@@ -8,9 +8,9 @@ const swiper = new Swiper(".swiper-container", {
     prevEl: ".slider-button--prev",
   },
 
-  // autoplay: {
-  //   delay: 5000,
-  // },
+  autoplay: {
+    delay: 5000,
+  },
 
   keyboard: {
     enabled: true,
