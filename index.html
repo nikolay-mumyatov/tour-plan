@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <!-- Подключение стилей swaper-slider-->
     <link rel="stylesheet" href="css/style.min.css" />
     <title>Best tour plan</title>
   </head>
@@ -195,6 +197,83 @@
       <!-- /.container -->
     </section>
     <!-- /.hotel -->
+    <section class="hotel-info">
+      <div class="container">
+        <div class="hotel-info__wrapper">
+          <div class="slider">
+            <!-- Slider main container -->
+            <div class="swiper-container">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <img
+                    src="img/hotel-info/slide-1.jpg"
+                    alt="image: hotel foto 1"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="img/hotel-info/slide-2.jpg"
+                    alt="image: hotel foto 2"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="img/hotel-info/slide-3.jpg"
+                    alt="image: hotel foto 3"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="img/hotel-info/slide-4.jpg"
+                    alt="image: hotel foto 4"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="img/hotel-info/slide-5.jpg"
+                    alt="image: hotel foto 5"
+                  />
+                </div>
+                ...
+              </div>
+
+              <!-- If we need navigation buttons -->
+              <button class="slider-button slider-button--prev"></button>
+              <button class="slider-button slider-button--next"></button>
+            </div>
+          </div>
+          <!-- /.slider -->
+          <div class="options">
+            <div class="options__wrapper">
+              <div class="options__price">
+                <span class="options__price--small">price starts as</span>
+                <span class="options__price--price">$ 8,500</span>
+                <span class="options__price--small">per room / night</span>
+              </div>
+              <div class="options__guest">
+                <span class="guest">2 x Guests</span>
+                <span class="room">1 x Room</span>
+              </div>
+            </div>
+            <div class="options__booking">
+              <span class="options__booking--quick">Quick Booking</span>
+              <a href="telto:12100" class="options__booking--tel">12100</a>
+            </div>
+            <button class="button options__button">View Other Options</button>
+          </div>
+          <!-- /.options -->
+
+          <!-- <div class="map"></div> -->
+
+          <!-- /.map -->
+        </div>
+        <!-- /.hotel-info__wrapper -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.hotel-info -->
 
     <section class="other">
       <div class="container">
@@ -202,7 +281,11 @@
         <div class="grid-box other-box">
           <div class="other-card other-card__big">
             <div class="other-card__img">
-              <img src="img/other/card-1.jpg" alt="image: hotel-foto" class="other__img" />
+              <img
+                src="img/other/card-1.jpg"
+                alt="image: hotel-foto"
+                class="other__img"
+              />
               <span class="other__offer other__offer-big">Flash Offer</span>
             </div>
             <!-- /.other-card__img -->
@@ -237,7 +320,9 @@
                 </div>
               </div>
               <!-- /.other-stars -->
-              <h3 class="other-card-title other-card-title__big">Hotel Blue Haven</h3>
+              <h3 class="other-card-title other-card-title__big">
+                Hotel Blue Haven
+              </h3>
               <p class="other__text">
                 Aute quis duis excepteur excepteur ipsum cat eiusmod consectetur
                 enim laborum magna llit. Ipsum est fugiat velit ea llamco do
@@ -246,9 +331,9 @@
                 mollit. Ipsum est fugiat velit ea ullamco do
               </p>
               <div class="other-card-address other-card-address__big">
-                <span class="other__location">1749 Wheeler Ridge Delaware</span>
-                <span class="other__guest">2 x Guests</span>
-                <span class="other__room">1 x Room</span>
+                <span class="location">1749 Wheeler Ridge Delaware</span>
+                <span class="guest">2 x Guests</span>
+                <span class="room">1 x Room</span>
               </div>
               <div class="other-book">
                 <div class="other-card-price">
@@ -264,16 +349,20 @@
           </div>
           <div class="other-card">
             <div class="other-card__img">
-              <img src="img/other/card-2.jpg" alt="image: hotel-foto" class="other__img" />
+              <img
+                src="img/other/card-2.jpg"
+                alt="image: hotel-foto"
+                class="other__img"
+              />
               <span class="other__offer">Flash Offer</span>
             </div>
             <!-- /.other-card__img -->
             <div class="other-card__description">
               <h3 class="other-card-title">LUX* Belle Mare</h3>
               <div class="other-card-address">
-                <span class="other__location">1749 Wheeler Ridge Delaware</span>
-                <span class="other__guest">2 x Guests</span>
-                <span class="other__room">1 x Room</span>
+                <span class="location">1749 Wheeler Ridge Delaware</span>
+                <span class="guest">2 x Guests</span>
+                <span class="room">1 x Room</span>
               </div>
               <div class="other-book">
                 <div class="other-card-price">
@@ -289,16 +378,20 @@
           </div>
           <div class="other-card">
             <div class="other-card__img">
-              <img src="img/other/card-3.jpg" alt="image: hotel-foto" class="other__img" />
+              <img
+                src="img/other/card-3.jpg"
+                alt="image: hotel-foto"
+                class="other__img"
+              />
               <span class="other__offer">Flash Offer</span>
             </div>
             <!-- /.other-card__img -->
             <div class="other-card__description">
               <h3 class="other-card-title">White Palace</h3>
               <div class="other-card-address">
-                <span class="other__location">1749 Wheeler Ridge Delaware</span>
-                <span class="other__guest">2 x Guests</span>
-                <span class="other__room">1 x Room</span>
+                <span class="location">1749 Wheeler Ridge Delaware</span>
+                <span class="guest">2 x Guests</span>
+                <span class="room">1 x Room</span>
               </div>
               <div class="other-book">
                 <div class="other-card-price">
@@ -314,16 +407,20 @@
           </div>
           <div class="other-card">
             <div class="other-card__img">
-              <img src="img/other/card-4.jpg" alt="image: hotel-foto" class="other__img" />
+              <img
+                src="img/other/card-4.jpg"
+                alt="image: hotel-foto"
+                class="other__img"
+              />
               <span class="other__offer">Flash Offer</span>
             </div>
             <!-- /.other-card__img -->
             <div class="other-card__description">
               <h3 class="other-card-title">Luxury Place</h3>
               <div class="other-card-address">
-                <span class="other__location">1749 Wheeler Ridge Delaware</span>
-                <span class="other__guest">2 x Guests</span>
-                <span class="other__room">1 x Room</span>
+                <span class="location">1749 Wheeler Ridge Delaware</span>
+                <span class="guest">2 x Guests</span>
+                <span class="room">1 x Room</span>
               </div>
               <div class="other-book">
                 <div class="other-card-price">
@@ -339,16 +436,20 @@
           </div>
           <div class="other-card">
             <div class="other-card__img">
-              <img src="img/other/card-5.jpg" alt="image: hotel-foto" class="other__img" />
+              <img
+                src="img/other/card-5.jpg"
+                alt="image: hotel-foto"
+                class="other__img"
+              />
               <span class="other__offer">Flash Offer</span>
             </div>
             <!-- /.other-card__img -->
             <div class="other-card__description">
               <h3 class="other-card-title">Hotel Five Star</h3>
               <div class="other-card-address">
-                <span class="other__location">1749 Wheeler Ridge Delaware</span>
-                <span class="other__guest">2 x Guests</span>
-                <span class="other__room">1 x Room</span>
+                <span class="location">1749 Wheeler Ridge Delaware</span>
+                <span class="guest">2 x Guests</span>
+                <span class="room">1 x Room</span>
               </div>
               <div class="other-book">
                 <div class="other-card-price">
@@ -415,5 +516,7 @@
     </div>
     <!-- /.modal-wrapper -->
     <!-- /.modal -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

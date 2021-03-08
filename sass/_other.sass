@@ -27,43 +27,6 @@
 		font-size: 14px
 		line-height: 160.6%
 
-	&__location
-		&:before
-			content: ""
-			display: block
-			margin-right: 14px
-			background-image: url('../img/other/location.svg')
-			width: 14px
-			height: 14px
-
-	&__guest
-		&:before
-			content: ""
-			display: block
-			margin-right: 14px
-			background-image: url('../img/other/guest.svg')
-			width: 14px
-			height: 14px
-
-	&__room
-		&:before
-			content: ""
-			display: block
-			margin-right: 14px
-			background-image: url('../img/other/room.svg')
-			width: 14px
-			height: 14px
-
-	&__location,
-	&__guest,
-	&__room,
-		display: flex
-		font-size: 12px
-		line-height: 15px
-		color: $white-font
-		&:not(:last-child)
-			margin-bottom: 11px
-
 	&__button
 		color: $white-font
 
@@ -159,3 +122,40 @@
 	font-size: 14px
 	line-height: 19px
 	border-radius: 4px
+
+.location
+	&:before
+		content: ""
+		display: block
+		margin-right: 14px
+		background-image: url('../img/other/location.svg')
+		width: 14px
+		height: 14px
+
+.guest
+	&:before
+		content: ""
+		display: block
+		margin-right: 14px
+		background-image: url('../img/other/guest.svg')
+		width: 14px
+		height: 14px
+
+.room
+	&:before
+		content: ""
+		display: block
+		margin-right: 14px
+		background-image: url('../img/other/room.svg')
+		width: 14px
+		height: 14px
+
+.location,
+.guest,
+.room,
+	display: flex
+	font-size: 12px
+	line-height: 15px
+	color: $white-font
+	&:not(:last-child)
+		margin-bottom: 11px
