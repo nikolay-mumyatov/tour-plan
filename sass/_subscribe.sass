@@ -1,0 +1,69 @@
+.subscribe
+	position: relative
+	padding: 98px 0 87px 0
+	background-image: url(../img/subscribe/subscribe.png)
+	background-position: center
+	background-size: cover
+	object-fit: cover
+	background-repeat: no-repeat
+	&::after
+		content: ''
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background: rgba(10, 34, 61, 0.8)
+
+	&__text
+		color: $white-font
+		font-size: 24px
+		line-height: 30px
+	&__strong
+		width: 100%
+		color: $white-font
+		font-size: 36px
+		line-height: 45px
+		text-transform: uppercase
+
+.subscribe-title
+	display: flex
+	flex-wrap: wrap
+
+.subscribe-block
+	position: relative
+	z-index: 1
+	display: flex
+	justify-content: center
+	align-items: center
+
+.subscribe-form
+	display: flex
+
+	&__input
+		display: block
+		width: 285px
+		height: 55px
+		padding: 0 15px 0 33px
+		font-size: 14px
+		line-height: 18px
+		color: $grey-color
+		border: none
+		border-radius: 4px 0 0 4px
+		opacity: 1
+		transition: 0.1s
+		&:focus
+			color: $black-font
+			outline: none
+		&:focus
+			&::placeholder
+				opacity: 0
+
+	&__button
+		width: 65px
+		height: 55px
+		border-radius: 0 4px 4px 0
+		font-size: 12px
+		line-height: 15px

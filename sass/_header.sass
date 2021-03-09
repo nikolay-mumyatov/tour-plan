@@ -30,8 +30,14 @@
     border-radius: 6px
     font-size: 12px
     line-height: 15px
+    opacity: 1
+    transition: 0.1s
     &:focus
       outline: none
+    &:focus
+      &::placeholder
+        opacity: 0
+
   &__button
     z-index: 0
     position: absolute
