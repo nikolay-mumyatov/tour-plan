@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <!-- Подключение стилей swaper-slider-->
     <link rel="stylesheet" href="css/style.min.css" />
+    <script
+      src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"
+      type="text/javascript"
+    ></script>
     <title>Best tour plan</title>
   </head>
   <body>
@@ -264,8 +268,8 @@
               <button class="button options__button">View Other Options</button>
             </div>
             <!-- /.options -->
-            <div class="map">
-              <iframe
+            <div class="map" id="map" style="width: 630px; height: 213px">
+              <!-- <iframe
                 class="map__size"
                 src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6307.44741635654!2d-122.4186161557082!3d37.77307614436112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1615206593579!5m2!1sru!2sru"
                 width="350"
@@ -273,7 +277,10 @@
                 style="border: 0"
                 allowfullscreen=""
                 loading="lazy"
-              ></iframe>
+              ></iframe> -->
+
+              
+
             </div>
             <!-- /.map -->
           </div>
@@ -528,5 +535,6 @@
     <!-- /.modal -->
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/ya-map.js"></script>
   </body>
 </html>
