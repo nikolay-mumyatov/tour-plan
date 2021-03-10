@@ -18,3 +18,7 @@ const swiper = new Swiper(".swiper-container", {
   },
 
 });
+
+
+// Paralax effect
+$(".parallax-window").parallax({ imageSrc: "../img/subscribe/subscribe.jpg" });
