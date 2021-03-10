@@ -1,11 +1,11 @@
-const swiper = new Swiper(".swiper-container", {
+const hotelSlider = new Swiper(".hotel-info-container", {
   // Optional parameters
   loop: true,
 
   // Navigation arrows
   navigation: {
-    nextEl: ".slider-button--next",
-    prevEl: ".slider-button--prev",
+    nextEl: ".hotel-info-button--next",
+    prevEl: ".hotel-info-button--prev",
   },
 
   autoplay: {
@@ -16,9 +16,19 @@ const swiper = new Swiper(".swiper-container", {
     enabled: true,
     onlyInViewport: false,
   },
-
 });
-
 
 // Paralax effect
 $(".parallax-window").parallax({ imageSrc: "../img/subscribe/subscribe.jpg" });
+
+// Reviews slider
+const reviews = new Swiper(".reviews-slider-container", {
+  // Optional parameters
+  loop: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".reviews-slider-button--next",
+    prevEl: ".reviews-slider-button--prev",
+  },
+});

@@ -1,0 +1,78 @@
+.reviews
+	padding: 40px 0 70px
+
+	&__title
+		margin-bottom: 70px
+
+	&-slider
+		position: relative
+		&-container
+			padding-bottom: 30px
+		&-wrapper
+		&__item
+			width: 731px
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			margin: 45px auto 0
+			padding: 0 62px 30px
+			background-color: #ffffff
+			border-radius: 8px
+		&-button
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			z-index: 99
+			width: 30px
+			height: 30px
+			border: none
+			cursor: pointer
+			background-repeat: no-repeat
+			background-position: center
+			background-size: 10px
+			background-color: transparent
+			&--prev
+				left: 0
+				background-image: url(../img/reviews/reviews-prev.svg)
+			&--next
+				right: 0
+				background-image: url(../img/reviews/reviews-next.svg)
+
+	&-user
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		margin-bottom: 32px
+
+	&__avatar
+		width: 90px
+		height: 90px
+		margin-top: -45px
+		margin-bottom: 9px
+		border-radius: 50%
+		object-fit: cover
+
+	&__name
+		margin-bottom: 10px
+		font-size: 12px
+		line-height: 15px
+		+m-bold
+		color: #EC1F46
+
+	&__date
+		margin-bottom: 4px
+		font-size: 10px
+		line-height: 13px
+
+	&__text
+		max-width: 537px
+		font-size: 12px
+		line-height: 160%
+		text-align: justify
+
+.stars
+
+	&-reviews
+		line-height: 8px
