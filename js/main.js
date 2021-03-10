@@ -18,8 +18,10 @@ const hotelSlider = new Swiper(".hotel-info-container", {
   },
 });
 
+
 // Paralax effect
-$(".parallax-window").parallax({ imageSrc: "../img/subscribe/subscribe.jpg" });
+$(".parallax-window").parallax({ imageSrc: "img/subscribe/subscribe.jpg" });
+
 
 // Reviews slider
 const reviews = new Swiper(".reviews-slider-container", {
