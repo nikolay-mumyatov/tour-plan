@@ -1,0 +1,45 @@
+@media (max-width: 1200px)
+  .other-grid
+    grid-gap: 1em
+
+  .other__button
+    padding: 11px 10px
+
+@media (max-width: 992px)
+  .other__button
+    padding: 11px 27px
+
+@media (max-width: 730px)
+
+  .other__button
+    padding: 11px 11px
+
+  .price-now
+    font-size: 20px
+
+@media (max-width: 730px)
+
+  .other
+    &-grid
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr))
+
+    &-card-big
+      grid-column-end: 2
+    &__img
+      max-height: 240px
+
+  .other-card-big
+    flex-direction: column
+
+    .card-big__img
+      width: 100%
+      min-height: 240px
+
+    .card-big__description
+      width: 100%
+
+@media (min-width: 300px) and (max-width: 480px)
+
+  .other
+    &-grid
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr))
