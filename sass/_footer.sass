@@ -9,6 +9,7 @@
 		align-items: start
 	&-item
 	&-title
+		margin-bottom: 20px
 		font-style: normal
 		font-weight: bold
 		font-size: 18px
@@ -28,19 +29,21 @@
 	&-social
 		grid-row: 2 / 4
 		grid-column: 3 / 5
+		&__list
+			display: flex
 		&__wrapper
 			display: flex
 			align-items: start
 		&__img
 			&:not(last-child)
 				margin-right: 12px
-		&--mr
+		&-mr
 			margin-right: 43px
 	&-legal
 		grid-row: 1 / 2
 	&-contact
 		grid-column: span 2
-		&--mb
+		&-mb
 			margin-bottom: 25px
 		&__wrapper
 			margin-top: 22px
