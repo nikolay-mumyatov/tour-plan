@@ -871,7 +871,7 @@
           <!-- /.footer__item footer-legal -->
           <div class="footer__item footer-contact">
             <h3 class="footer-title footer-contact-mb">Contact details</h3>
-            <span class="footer-contact__text"
+            <span class="footer-contact__description"
               >Feel free to contact us by phone, email or by our contact
               form</span
             >
@@ -893,13 +893,22 @@
                   />
                 </div>
                 <span class="footer-contact__text">
-                  Tel (business hours) : <a href="tel:2691500">269 1500</a>
+                  Tel (business hours) :
+                  <a href="tel:2691500" class="footer-contact__text-link"
+                    >269 1500</a
+                  >
                   <br />
                   Tel (hotline) Monday - Saturday:
-                  <a href="tel:52566138">52-56-61-38</a> (08:00 am – 20:00 pm)
+                  <a href="tel:52566138" class="footer-contact__text-link"
+                    >52-56-61-38</a
+                  >
+                  (08:00 am – 20:00 pm)
                   <br />
                   Tel (hotline) Sunday:
-                  <a href="tel:52566138">52-56-61-38</a> (08:00 am – 14:00 pm)
+                  <a href="tel:52566138" class="footer-contact__text-link"
+                    >52-56-61-38</a
+                  >
+                  (08:00 am – 14:00 pm)
                 </span>
               </div>
               <div class="footer-contact__item">
@@ -907,7 +916,9 @@
                   <img src="img/footer/email.svg" alt="icon: email" />
                 </div>
                 <span class="footer-contact__text">
-                  <a href="mailto:cherly.lawson@example.com"
+                  <a
+                    href="mailto:cherly.lawson@example.com"
+                    class="footer-contact__text-link"
                     >cherly.lawson@example.com</a
                   >
                 </span>
@@ -934,8 +945,10 @@
                 class="footer-form__message"
                 placeholder="Message"
               ></textarea>
-              <button class="button footer-form__button">Send</button>
-              <span class="footer-form__text">* Required Fields</span>
+              <div class="footer-form__button-wrapper">
+                <button class="button footer-form__button">Send</button>
+                <span class="footer-form__text">* Required Fields</span>
+              </div>
             </form>
           </div>
           <!-- /.footer__item footer-message -->
