@@ -22,9 +22,17 @@
 @media (max-width: 768px)
   .footer
     padding: 70px 0 21px 0
+    &__img
+      width: 99px
+      margin-bottom: 5px
+    &-title
+      font-weight: normal
+    &__link
+      line-height: 150%
     &-wrapper
       grid-template-columns: repeat(6, 1fr)
       grid-row-gap: 40px
+      grid-column-gap: 10px
     &-logo
       grid-row: 1 / 2
       align-self: start
@@ -34,6 +42,7 @@
     &-additional
       grid-row: 2 / 3
       grid-column: 2 / 5
+      margin-left: 24px
     &-social
       grid-row: 1 / 2
       grid-column: span 4
@@ -41,21 +50,38 @@
       &__wrapper
         flex-wrap: wrap
       &-mr
-        margin-right: 25px
+        margin-right: 49px
+        margin-left: 10px
+        margin-bottom: 0
     &-legal
       grid-row: 2 / 3
       grid-column: 5 / 7
+      justify-content: start
     &-contact
       grid-row: 3 / 4
       grid-column: span 5
       width: 100%
+      margin-top: 18px
+      &__img
+        margin-left: 6px
+        width: 45px
     &-message
       grid-row: 4 / 5
       grid-column: span 5
+      margin-right: 55px
 
     &-form
       &__input
-        flex-basis: 48%
+        flex-basis: 47%
+
+@media  (max-width: 630px)
+  .footer
+    &-social
+      &-mr
+        margin-right: 25px
+        margin-left: 0
+    &-additional
+      margin-left: 10px
 
 @media  (max-width: 576px)
   .footer
@@ -73,6 +99,7 @@
     &-additional
       grid-row: 4 / 5
       grid-column: 1 / 1
+      margin-left: 0
     &-social
       grid-row: 2 / 3
       grid-column: 1 / 1
@@ -101,14 +128,16 @@
       margin-top: 56px
       &__list
         margin-right: 0
+  .footer-social-mr
 
 @media (min-width: 300px) and (max-width: 480px)
   .footer
+    &-message
+      margin-right: 0
     &-policy
       justify-content: flex-start
       flex-wrap: wrap
-
-      margin-top: 56px
+      margin-top: 26px
       &__list
         margin-right: 0
         margin-bottom: 10px
@@ -117,14 +146,23 @@
           margin-right: 4px
 
     &-contact
+      margin-top: -23px
+      &__img
+        margin-left: 0
+        width: 27px
+
       &__text
         max-width: 249px
 
     &-form
+      margin-top: -8px
+      &__name, &__tel
+        margin-top: 5px
       &__message
         padding-bottom: 15px
       &__button
         margin-top: 15px
         &-wrapper
+          margin-top: -10px
           max-width: 160px
           flex-wrap: wrap-reverse

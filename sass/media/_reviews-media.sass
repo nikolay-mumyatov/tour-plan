@@ -8,7 +8,7 @@
       margin-bottom: 70px
 
     &__text
-      max-height: 133px  
+      max-height: 133px
 
     &-slider
       &-container
@@ -16,6 +16,24 @@
       &-wrapper
       &__item
         max-width: 579px
+
+@media (max-width: 810px)
+  .reviews
+    &-slider
+      &-container
+        padding-bottom: 58px
+    &__title
+      margin-bottom: 52px
+      letter-spacing: 0
+      font-size: 30px
+      line-height: 34px
+    &-slider
+      &-button
+        top: 46%
+        &--next
+          right: 0
+        &--prev
+          left: 0
 
 @media (max-width: 730px)
   .reviews
@@ -47,3 +65,17 @@
   .reviews
     &__text
       max-height: 266px
+
+@media (min-width: 300px) and (max-width: 480px)
+  .reviews
+    &__title
+      font-size: 19px
+      line-height: 23px
+    &-slider
+      &-container
+        padding-bottom: 0
+      &-button
+        &--prev
+          margin-left: -91px
+        &--next
+          margin-right: -91px
