@@ -21,14 +21,33 @@
       line-height: 15px
 
 @media (max-width: 730px)
+  body
+    padding-top: 78px
   .header
+    position: fixed
+    z-index: 999
+    top: 0
+    margin: auto
+    width: 100%
     &__top
+      position: relative
       padding: 30px 0
+      z-index: 999
     &-nav
-      display: none
+      visibility: hidden
       position: fixed
+      top: 78px
+      z-index: 99
+      transition: 0.5s all
       width: 100%
       padding: 31px 0
+      opacity: 0
+    &-nav__visible
+      visibility: visible
+      z-index: 99
+      top: 78px
+      opacity: 1
+      bottom: 0
   .burger
     display: flex
   .search, .user
@@ -66,6 +85,11 @@
   .header
     &__top
       padding: 28px 0
+
+    &-nav
+      top: 74px
+    &-nav__visible
+      top: 74px
   .nav
     &-search
       .search__form
@@ -73,4 +97,4 @@
           width: 250px
   .logo
     &__img
-      max-width: 99px 
+      max-width: 99px

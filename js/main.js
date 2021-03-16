@@ -34,3 +34,13 @@ const reviews = new Swiper(".reviews-slider-container", {
     prevEl: ".reviews-slider-button--prev",
   },
 });
+
+
+// Burger menu
+
+var menuBtn = document.querySelector(".burger");
+
+menuBtn.addEventListener("click", function () {
+  console.log("нажал");
+  document.querySelector(".header-nav").classList.toggle("header-nav__visible");
+});
