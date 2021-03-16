@@ -20,23 +20,23 @@
 		font-size: 14px
 		line-height: 19px
 		border-radius: 4px
+		margin-bottom: -4px
 
 	&__offer
 		position: absolute
 		top: 26px
 		left: 0
-		padding: 4px 9px
+		padding: 2px 7px
 		border-radius: 0px 4px 4px 0px
 		color: $white-font
 		background: $red-color
-		font-size: 12px
+		font-size: 9px
 		line-height: 15px
 
 	&-grid
 		display: grid
 		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr))
 		grid-gap: 2em
-		
 
 	&-card-big
 		grid-column-start: 1
@@ -59,24 +59,26 @@
 				border-radius: 0px 4px 4px 0px
 				background: $red-color
 				color: $white-font
-				padding: 8px 12px
+				padding: 7px 17px
+				font-size: 12px
+				line-height: 15px
 
 			&-description
 				width: 50%
-				padding: 43px 21px 30px 20px
+				padding: 37px 21px 30px 47px
 
 			&-title
 				color: $white-font
 				margin-bottom: 27px
 
 			&-text
-				margin-bottom: 34px
+				margin-bottom: 40px
 				color: $white-font
 				font-size: 14px
 				line-height: 160.6%
 
 			&-address
-				margin-bottom: 43px
+				margin-bottom: 39px
 
 	&-card
 		background: $blue-color
@@ -101,30 +103,33 @@
 
 		&-button
 
+		&-price
+			display: flex
+			flex-wrap: wrap
+			.price-old
+				margin-bottom: 5px
+				color: $white-font
+				font-size: 14px
+				line-height: 18px
+				text-decoration-line: line-through
+
+			.price-now
+				width: 100%
+				color: $white-font
+				font-size: 24px
+				line-height: 30px
+				+m-bold
+
 	&-book
 		display: flex
 		justify-content: space-between
-		align-items: center
+		align-items: flex-end
 
 	&-stars
 		margin-bottom: 5px
+		.star
+			margin-right: 0
 
-.price
-	display: flex
-	flex-wrap: wrap
-	&-old
-		margin-bottom: 5px
-		color: $white-font
-		font-size: 14px
-		line-height: 18px
-		text-decoration-line: line-through
-
-	&-now
-		width: 100%
-		color: $white-font
-		font-size: 24px
-		line-height: 30px
-		+m-bold
 
 .stars
 

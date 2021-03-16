@@ -4,7 +4,7 @@
 	&-wrapper
 		display: grid
 		grid-template-columns: repeat(4, minmax(min-content, 1fr))
-		grid-auto-rows: minmax(50px, min-content)
+		grid-auto-rows: minmax(32px, min-content)
 		grid-gap: 24px
 		align-items: start
 	&-item
@@ -40,10 +40,13 @@
 		&-mr
 			margin-right: 43px
 	&-legal
+		display: grid
 		grid-row: 1 / 2
+		justify-content: end
 	&-contact
 		grid-column: span 2
 		&-mb
+			margin-top: 10px
 			margin-bottom: 25px
 		&__wrapper
 			margin-top: 22px
@@ -90,11 +93,13 @@
 			padding: 0 23px
 			height: 50px
 			margin-bottom: 15px
-			flex-basis: 48%
-		&__name
-		&__tel
+			flex-basis: 47%
+		&__name, &__tel
+			margin-top: 8px
+			margin-bottom: 14px
 		&__message
 			width: 100%
+			height: 124px
 			background-color: #ffffff
 			border-radius: 4px
 			padding: 18px 23px
@@ -152,9 +157,9 @@
 	&-policy
 		display: flex
 		justify-content: flex-end
-		margin-top: 101px
+		margin-top: 96px
 		&__list
-			margin-right: 277px
+			margin-right: 269px
 		&__link
 			text-decoration: none
 			color: $white-font
