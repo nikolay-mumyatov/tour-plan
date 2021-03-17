@@ -35,23 +35,30 @@ const reviews = new Swiper(".reviews-slider-container", {
 
 // Burger menu
 
-var menuBtn = document.querySelector(".burger");
-
-menuBtn.addEventListener("click", function () {
-  console.log("нажал");
-  document.querySelector(".header-nav").classList.toggle("header-nav__visible");
+var menuBtn = document.querySelector(".burger"),
+    burgerLine = document.querySelectorAll(".burger__line");
+    
+burgerLine.forEach(function (line) {
+  menuBtn.addEventListener("click", function () {
+    line.classList.toggle("burger__line-active");
+    document.querySelector(".header-nav").classList.toggle("header-nav__visible");
+  });
 });
+
+
 
 // Modal window
 
-let modalBtn = document.querySelectorAll(".modal-btn"),
-    modalWindow = document.querySelector(".modal"),
+let modalWindow = document.querySelector(".modal"),
     closeBtn = document.querySelector(".modal-close");
+    
 
-modalBtn.forEach((button) => {
-  button.addEventListener("click", function () {
+// Прослушивание документа на нажатие. Если нажали на элемент с классом .modal-btn то произойдет событие.
+document.addEventListener("click", function (e) {
+  const target = e.target
+  if (target.matches(".modal-btn")) {
     modalWindow.classList.toggle("modal-active");
-  });
+  }
 });
 
 closeBtn.addEventListener("click", function () {

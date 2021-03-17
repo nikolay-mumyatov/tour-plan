@@ -69,6 +69,7 @@
     +m-regular
 
 .burger
+  position: relative
   display: none
   flex-direction: column
   justify-content: space-between
@@ -83,6 +84,19 @@
     width: 16px
     height: 1px
     background-color: $black-font
+    opacity: 1
+    transition: 0.3s all
+    &-active
+      &:first-of-type
+        position: absolute
+        top: 50%
+        transform: rotate(45deg)
+      &:nth-of-type(2)
+        opacity: 0
+      &:last-of-type
+        position: absolute
+        top: 50%
+        transform: rotate(-45deg)
 
 .header-nav
   background: $blue-color
