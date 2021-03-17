@@ -1,5 +1,5 @@
 .modal
-	display: none
+	visibility: hidden
 	position: fixed
 	left: 0
 	right: 0
@@ -9,6 +9,11 @@
 	z-index: 999
 	text-align: center
 	background: rgba(0, 143, 223, 0.39)
+	opacity: 0
+	transition: 0.5s all
+	&-active
+		opacity: 1
+		visibility: visible
 
 	&-wrapper
 		position: absolute
