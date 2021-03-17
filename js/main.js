@@ -44,15 +44,14 @@ menuBtn.addEventListener("click", function () {
 
 // Modal window
 
-let modalBtn = document.querySelector(".modal-btn"),
-  modalWindow = document.querySelector(".modal"),
-  closeBtn = document.querySelector(".modal-close");
+let modalBtn = document.querySelectorAll(".modal-btn"),
+    modalWindow = document.querySelector(".modal"),
+    closeBtn = document.querySelector(".modal-close");
 
-modalBtn.addEventListener("click", function () {
-  // modalWindow.classList.toggle("modal-active");
-  if ($(this).hasClass("modal-btn")) {
+modalBtn.forEach((button) => {
+  button.addEventListener("click", function () {
     modalWindow.classList.toggle("modal-active");
-  }
+  });
 });
 
 closeBtn.addEventListener("click", function () {
