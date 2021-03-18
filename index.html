@@ -927,22 +927,23 @@
           <!-- /.footer__item footer-contact -->
           <div class="footer__item footer-message">
             <h3 class="footer-title">Send us a message</h3>
-            <form action="#" class="footer-form">
+            <form action="php/send.php" method="POST" class="footer-form">
               <input
                 type="text"
                 class="footer-form__name footer-form__input"
                 placeholder="Your Full Name*"
+                name="name"
               />
               <input
                 type="text"
                 class="footer-form__tel footer-form__input"
                 placeholder="Phone Number*"
+                name="phone"
               />
               <textarea
-                cols="30"
-                rows="10"
                 class="footer-form__message"
                 placeholder="Message"
+                name="message"
               ></textarea>
               <div class="footer-form__button-wrapper">
                 <button class="button footer-form__button">Send</button>
