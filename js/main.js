@@ -1,3 +1,4 @@
+// настройка слайдера
 const hotelSlider = new Swiper(".hotel-info-container", {
   // Optional parameters
   loop: true,
