@@ -62,6 +62,10 @@
 			font-size: 14px
 			line-height: 160%
 			color: $grey-color
+		&__text
+			&-link
+				&:hover
+					color: $red-color
 
 		&__img
 			width: 35px
@@ -144,6 +148,8 @@
 		font-weight: normal
 		font-size: 14px
 		line-height: 160%
+		&:hover
+			color: $red-color
 
 	&__text
 
@@ -154,12 +160,26 @@
 		&__list
 			margin-right: 269px
 		&__link
+			position: relative
 			text-decoration: none
 			color: $white-font
 			font-size: 12px
 			line-height: 15px
 			&:not(last-child)
 				margin-right: 10px
+			&::after
+				content: ""
+				display: block
+				background-color: #ffffff
+				height: 1px
+				width: 0%
+				left: 50%
+				position: absolute
+				transition: width 0.2s ease-in-out
+				transform: translateX(-50%)
+			&:hover
+				&::after
+					width: 100%
 
 		&__pay
 		&__img

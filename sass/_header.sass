@@ -115,9 +115,23 @@
   &-item
     list-style: none
   &-link
+    position: relative
     text-decoration: none
     color: $white-font
     text-transform: uppercase
     +m-bold
     font-size: 14px
     line-height: 18px
+    &::after
+      content: ""
+      display: block
+      background-color: #ffffff
+      height: 1px
+      width: 0%
+      left: 50%
+      position: absolute
+      transition: width 0.2s ease-in-out
+      transform: translateX(-50%)
+    &:hover
+      &::after
+        width: 100%
