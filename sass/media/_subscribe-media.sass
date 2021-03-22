@@ -34,11 +34,6 @@
       font-size: 30px
       line-height: 38px
 
-  .subscribe-form
-
-    &__input
-      width: 265px
-
 @media  (max-width: 630px)
   .subscribe-block
     flex-wrap: wrap
@@ -46,6 +41,7 @@
 
   .subscribe
     padding: 76px 0 83px 0
+    max-height: 300px
 
     &__text
       margin-bottom: 5px
@@ -53,9 +49,11 @@
       margin-bottom: 37px
 
   .subscribe-form
+    width: 100%
 
     &__input
-      width: 285px
+      &-group
+        width: 100%
 
 @media (min-width: 300px) and (max-width: 480px)
   .subscribe-form
