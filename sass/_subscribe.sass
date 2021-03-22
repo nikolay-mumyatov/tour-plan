@@ -1,5 +1,6 @@
 .subscribe
 	position: relative
+	max-height: 260px
 	padding: 98px 0 87px 0
 	background-image: url(../img/subscribe/subscribe.jpg)
 	background-position: center
@@ -43,7 +44,7 @@
 
 .subscribe-form
 	display: flex
-	align-items: center
+	align-items: flex-start
 
 	&__input
 		display: block
@@ -56,6 +57,8 @@
 		border-radius: 4px 0 0 4px
 		opacity: 1
 		transition: 0.1s
+		&-group
+			max-width: 285px
 
 	&__button
 		min-width: 65px

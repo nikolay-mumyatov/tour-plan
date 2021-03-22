@@ -53,9 +53,25 @@ burgerLine.forEach(function (line) {
 $(".form").each(function () {
   $(this).validate({
     errorClass: "form-validate",
+    rules: {
+      name: {
+        required: true,
+        minlength: 2,
+      },
+      phone: {
+        required: true,
+        minlength: 17,
+      },
+    },
     messages: {
-      name: "Please specify your name",
-      phone: "Please specify your phone",
+      name: {
+        required: "Please specify your name",
+        minlength: jQuery.validator.format("At least {0} characters required!"),
+      },
+      phone: {
+        required: "Please specify your phone",
+        minlength: "At least 11 characters required!",
+      },
       email: {
         required: "We need your email address to contact you",
         email: "Your email address must be in the format of name@domain.com",
