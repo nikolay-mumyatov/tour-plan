@@ -135,10 +135,12 @@
       <div class="container">
         <h2 class="section-title thankyou-title">Thank you!</h2>
         <p class="thankyou__text">
-          Your message has been sent successfully. Our manager will contact you soon.
+          Your message has been sent successfully. Our manager will contact you
+          soon.
         </p>
-        <a href="index.html" class="button thankyou__button">Go to the main page</a>
-        
+        <a href="index.html" class="button thankyou__button"
+          >Go to the main page</a
+        >
       </div>
     </section>
 
@@ -146,7 +148,7 @@
       <div class="container">
         <div class="footer-wrapper">
           <div class="footer-logo">
-            <a href="index.html" class="footer__link">
+            <a href="#" class="footer__link">
               <img
                 src="img/footer/footer-logo.svg"
                 alt="image: Footer logo"
@@ -317,19 +319,25 @@
           <!-- /.footer__item footer-contact -->
           <div class="footer__item footer-message">
             <h3 class="footer-title">Send us a message</h3>
-            <form action="send.php" method="POST" class="footer-form">
-              <input
-                type="text"
-                class="footer-form__name footer-form__input"
-                placeholder="Your Full Name*"
-                name="name"
-              />
-              <input
-                type="text"
-                class="footer-form__tel footer-form__input"
-                placeholder="Phone Number*"
-                name="phone"
-              />
+            <form action="send.php" method="POST" class="form footer-form">
+              <div class="footer-form__input-group">
+                <input
+                  type="text"
+                  class="footer-form__name footer-form__input"
+                  placeholder="Your Full Name*"
+                  name="name"
+                  required
+                />
+              </div>
+              <div class="footer-form__input-group">
+                <input
+                  type="tel"
+                  class="footer-form__tel footer-form__input"
+                  placeholder="Phone Number*"
+                  name="phone"
+                  required
+                />
+              </div>
               <textarea
                 class="footer-form__message"
                 placeholder="Message"
@@ -366,6 +374,8 @@
     <script src="js/swiper-bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/parallax.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
