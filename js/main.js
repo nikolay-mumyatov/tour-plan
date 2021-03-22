@@ -66,6 +66,9 @@ $(".form").each(function () {
 
 // phone masc
 $("input[type=tel]").mask("+7 (999) 999-9999");
+$("input[type=tel]").focus(function () {
+  $("input[type=tel]").val("+7");
+});
 
 // Modal window
 
