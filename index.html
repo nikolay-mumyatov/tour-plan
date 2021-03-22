@@ -28,7 +28,7 @@
           <!-- /.header__logo -->
 
           <div class="search header__search">
-            <form action="#" class="form search__form">
+            <form action="#" class="search__form">
               <input
                 type="text"
                 class="search__form-item"
@@ -265,7 +265,9 @@
                 <span class="options__booking-quick">Quick Booking</span>
                 <a href="tel:12100" class="options__booking-tel">12100</a>
               </div>
-              <button class="button options__button modal-btn">View Other Options</button>
+              <button class="button options__button modal-btn">
+                View Other Options
+              </button>
             </div>
             <!-- /.options -->
             <div class="map">
@@ -352,7 +354,9 @@
                   <span class="price-now">$ 8,500</span>
                 </div>
                 <div class="other-card-button">
-                  <button class="button other__button modal-btn" id="1" >Book Now</button>
+                  <button class="button other__button modal-btn" id="1">
+                    Book Now
+                  </button>
                 </div>
               </div>
             </div>
@@ -382,7 +386,9 @@
                   <span class="price-now">$ 3,000</span>
                 </div>
                 <div class="other-card-button">
-                  <button class="button other__button modal-btn" id="1" >Book Now</button>
+                  <button class="button other__button modal-btn" id="1">
+                    Book Now
+                  </button>
                 </div>
               </div>
             </div>
@@ -411,7 +417,9 @@
                   <span class="price-now">$ 9,500</span>
                 </div>
                 <div class="other-card-button">
-                  <button class="button other__button modal-btn" id="1" >Book Now</button>
+                  <button class="button other__button modal-btn" id="1">
+                    Book Now
+                  </button>
                 </div>
               </div>
             </div>
@@ -440,7 +448,9 @@
                   <span class="price-now">$ 2,500</span>
                 </div>
                 <div class="other-card-button">
-                  <button class="button other__button modal-btn" id="1" >Book Now</button>
+                  <button class="button other__button modal-btn" id="1">
+                    Book Now
+                  </button>
                 </div>
               </div>
             </div>
@@ -469,7 +479,9 @@
                   <span class="price-now">$ 3,500</span>
                 </div>
                 <div class="other-card-button">
-                  <button class="button other__button modal-btn" id="1" >Book Now</button>
+                  <button class="button other__button modal-btn" id="1">
+                    Book Now
+                  </button>
                 </div>
               </div>
             </div>
@@ -706,9 +718,11 @@
               class="activities-card__img"
             />
             <h4 class="activities-card__text">
-              The curious corner <br>of chamarel
+              The curious corner <br />of chamarel
             </h4>
-            <button class="button activities-card__button modal-btn">Book Now</button>
+            <button class="button activities-card__button modal-btn">
+              Book Now
+            </button>
           </div>
           <!-- /.activities-card -->
           <div class="activities-card activities__card">
@@ -718,9 +732,11 @@
               class="activities-card__img"
             />
             <h4 class="activities-card__text">
-              Gymkhana club golf <br/>course
+              Gymkhana club golf <br />course
             </h4>
-            <button class="button activities-card__button modal-btn">Book Now</button>
+            <button class="button activities-card__button modal-btn">
+              Book Now
+            </button>
           </div>
           <!-- /.activities-card -->
           <div class="activities-card activities__card">
@@ -733,7 +749,9 @@
               Tamarind falls hiking <br />
               trip - full day
             </h4>
-            <button class="button activities-card__button modal-btn">Book Now</button>
+            <button class="button activities-card__button modal-btn">
+              Book Now
+            </button>
           </div>
           <!-- /.activities-card -->
           <div class="activities-card activities__card">
@@ -743,9 +761,11 @@
               class="activities-card__img"
             />
             <h4 class="activities-card__text">
-              The blue marine discovery <br>quest
+              The blue marine discovery <br />quest
             </h4>
-            <button class="button activities-card__button modal-btn">Book Now</button>
+            <button class="button activities-card__button modal-btn">
+              Book Now
+            </button>
           </div>
           <!-- /.activities-card -->
         </div>
@@ -928,19 +948,25 @@
           <!-- /.footer__item footer-contact -->
           <div class="footer__item footer-message">
             <h3 class="footer-title">Send us a message</h3>
-            <form action="send.php" method="POST" class="footer-form">
-              <input
-                type="text"
-                class="footer-form__name footer-form__input"
-                placeholder="Your Full Name*"
-                name="name"
-              />
-              <input
-                type="text"
-                class="footer-form__tel footer-form__input"
-                placeholder="Phone Number*"
-                name="phone"
-              />
+            <form action="send.php" method="POST" class="form footer-form">
+              <div class="footer-form__input-group">
+                <input
+                  type="text"
+                  class="footer-form__name footer-form__input"
+                  placeholder="Your Full Name*"
+                  name="name"
+                  required
+                />
+              </div>
+              <div class="footer-form__input-group">
+                <input
+                  type="tel"
+                  class="footer-form__tel footer-form__input"
+                  placeholder="Phone Number*"
+                  name="phone"
+                  required
+                />
+              </div>
               <textarea
                 class="footer-form__message"
                 placeholder="Message"
@@ -977,23 +1003,26 @@
     <div class="modal">
       <div class="modal-wrapper">
         <h3 class="modal-title">Booking</h3>
-        <form action="#" class="modal-form">
+        <form action="#" class="form modal-form">
           <input
             type="text"
             class="modal__input"
             placeholder="Your Full Name*"
+            name="name"
             required
           />
           <input
             type="tel"
             class="modal__input"
             placeholder="Phone Number*"
+            name="phone"
             required
           />
           <input
             type="email"
             class="modal__input"
             placeholder="Email*"
+            name="email"
             required
           />
           <textarea
@@ -1023,6 +1052,8 @@
     <script src="js/swiper-bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/parallax.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

@@ -1,4 +1,4 @@
-// настройка слайдера
+// settings slider
 const hotelSlider = new Swiper(".hotel-info-container", {
   // Optional parameters
   loop: true,
@@ -77,3 +77,22 @@ $(document).click(function (e) {
     modalWindow.classList.toggle("modal-active");
   }
 });
+
+// form validation
+
+$(".form").each(function () {
+  $(this).validate({
+    errorClass: "form-validate",
+    messages: {
+      name: "Please specify your name",
+      phone: "Please specify your phone",
+      email: {
+        required: "We need your email address to contact you",
+        email: "Your email address must be in the format of name@domain.com",
+      },
+    },
+  });
+});
+
+// phone masc
+$("input[type=tel]").mask("+7 (999) 999-9999");
