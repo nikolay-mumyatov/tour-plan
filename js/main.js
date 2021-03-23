@@ -1,3 +1,6 @@
+// Css animation
+AOS.init();
+
 // settings slider
 const hotelSlider = new Swiper(".hotel-info-container", {
   // Optional parameters
