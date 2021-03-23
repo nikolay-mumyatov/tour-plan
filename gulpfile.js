@@ -1,7 +1,8 @@
 let project_folder = require("path").basename(__dirname); // папка с уже собранным проектом
 
 let path = {
-  build: { // готовые файлы проекта
+  build: {
+    // готовые файлы проекта
     html: project_folder + "/",
     php: project_folder + "/",
     css: project_folder + "/css/",
@@ -9,15 +10,17 @@ let path = {
     img: project_folder + "/img/",
     fonts: project_folder + "/fonts/",
   },
-  src: { // исходные файлы
+  src: {
+    // исходные файлы
     html: "./*.html",
     php: "./*.php",
     css: "./sass/style.sass",
-    js: "./js/*.js",
+    js: "./js/main.js",
     img: "./img/**/*.{jpg,png,svg,gif,ico,webp}",
     fonts: "./fonts/**/*.{woff,woff2}",
   },
-  watch: { // файлы, за изменением которых нужно следить
+  watch: {
+    // файлы, за изменением которых нужно следить
     html: "./*.html",
     php: "./*.php",
     css: "./sass/**/*.{sass,scss}",
@@ -52,17 +55,15 @@ function browserSync(params) {
 
 // копирование файлов html и php в папку с проектом
 function html() {
-  return src(path.src.html)
-    .pipe(dest(path.build.html)),
-    src(path.src.php)
-    .pipe(dest(path.build.php))
-    .pipe(browsersync.stream());
+  return (
+    src(path.src.html).pipe(dest(path.build.html)),
+    src(path.src.php).pipe(dest(path.build.php)).pipe(browsersync.stream())
+  );
 }
 
 // получение стилей слайдера в проект
 function slider() {
-  return src('css/swiper-bundle.min.css')
-    .pipe(dest(path.build.css))
+  return src("css/swiper-bundle.min.css").pipe(dest(path.build.css));
 }
 
 // cбор, оптимизация и минификация SASS
@@ -90,7 +91,7 @@ function css() {
     .pipe(dest(path.build.css))
     .pipe(browsersync.stream());
 }
- 
+
 // cбор, оптимизация и минификация javascript
 function js() {
   return src(path.src.js)
@@ -98,9 +99,11 @@ function js() {
     .pipe(uglify())
     .pipe(
       rename({
-        extname: ".min.js"
+        extname: ".min.js",
       })
     )
+    .pipe(dest(path.build.js))
+    .pipe(src("./js/*min.js"))
     .pipe(dest(path.build.js))
     .pipe(browsersync.stream());
 }
@@ -113,7 +116,7 @@ function images() {
         progressive: true,
         svgoPlugins: [{ removeViewBox: false }],
         interlaced: true,
-        optimizationLevel: 4 // 0 to 7
+        optimizationLevel: 5, // 0 to 7
       })
     )
     .pipe(dest(path.build.img))
@@ -128,26 +131,25 @@ function fonts() {
 }
 
 // функция слежки за файлами
-function watchFiles(params) {
-  gulp.watch([path.watch.html], html);
-  gulp.watch([path.watch.php], html);
-  gulp.watch([path.watch.css], css);
-  gulp.watch([path.watch.js], js);
-  gulp.watch([path.watch.img], images);
-}
+// function watchFiles(params) {
+//   gulp.watch([path.watch.html], html);
+//   gulp.watch([path.watch.php], html);
+//   gulp.watch([path.watch.css], css);
+//   gulp.watch([path.watch.js], js);
+//   gulp.watch([path.watch.img], images);
+// }
 
 // Очистка папки с проектом
 function clean(params) {
   return del(path.clean);
- }
+}
 
 gulp.task("del", () => {
-  // Очистка папки build.
   return del([project_folder]);
 });
 
-let build = gulp.series(clean, gulp.parallel(slider, css, js, html, fonts, images));
-let watch = gulp.parallel(build, watchFiles, browserSync);
+let build = gulp.series(clean,gulp.parallel(slider, css, js, html, fonts, images));
+let watch = gulp.parallel(build, browserSync);
 
 // привязка переменных к gulp
 exports.slider = slider;
