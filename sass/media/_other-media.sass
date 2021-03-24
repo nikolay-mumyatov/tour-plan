@@ -4,6 +4,7 @@
 
   .other__button
     padding: 11px 10px
+    min-width: 90px
 
 @media (max-width: 992px)
   .other__button
@@ -48,5 +49,19 @@
 @media (min-width: 300px) and (max-width: 480px)
 
   .other
+    &-card
+      &__description
+        padding: 30px 21px 25px 21px;
+      &__img
+        max-height: 150px
+        overflow: hidden
+    &__img
+      max-height: 150px
     &-grid
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr))
+  .other-card-big
+    .card-big-img
+      min-height: 170px
+  .other-card-big
+    .card-big-description
+      padding: 0 21px 30px 21px
