@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-    <!-- Подключение стилей swaper-slider-->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" /> <!-- Подключение стилей swaper-slider -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /> <!-- Подключение анимации -->
+    <link rel="stylesheet" href="css/style.min.css" /> <!-- Подключение своих стилей -->
+    <script src="js/jquerylazy.min.js"></script>
+    <script src="js/lazy.min.js"></script>
     <title>Best tour plan</title>
   </head>
   <body>
@@ -298,7 +299,7 @@
           <div class="other-card-big" data-aos="fade-up" data-aos-duration="1100">
             <div class="card-big-img">
               <img
-                src="img/other/card-1.jpg"
+                data-src="img/other/card-1.jpg"
                 alt="image: hotel-foto"
                 class="other__img"
               />
@@ -367,7 +368,7 @@
           <div class="other-card" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="200">
             <div class="other-card__img">
               <img
-                src="img/other/card-2.jpg"
+                data-src="img/other/card-2.jpg"
                 alt="image: hotel-foto"
                 class="other__img"
               />
@@ -398,7 +399,7 @@
           <div class="other-card" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="0">
             <div class="other-card__img">
               <img
-                src="img/other/card-3.jpg"
+                data-src="img/other/card-3.jpg"
                 alt="image: hotel-foto"
                 class="other__img"
               />
@@ -426,10 +427,10 @@
             </div>
             <!-- /.other-card__description -->
           </div>
-          <div class="other-card" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="200">
+          <div class="other-card" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="100">
             <div class="other-card__img">
               <img
-                src="img/other/card-4.jpg"
+                data-src="img/other/card-4.jpg"
                 alt="image: hotel-foto"
                 class="other__img"
               />
@@ -457,10 +458,10 @@
             </div>
             <!-- /.other-card__description -->
           </div>
-          <div class="other-card" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="400">
+          <div class="other-card" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="200">
             <div class="other-card__img">
               <img
-                src="img/other/card-5.jpg"
+                data-src="img/other/card-5.jpg"
                 alt="image: hotel-foto"
                 class="other__img"
               />
@@ -717,7 +718,7 @@
         <div class="activities-wrapper">
           <div class="activities-card activities__card" data-aos="fade-up" data-aos-duration="1100">
             <img
-              src="img/activities/card-1.jpg"
+              data-src="img/activities/card-1.jpg"
               alt="image: the curious corner of chamarel"
               class="activities-card__img"
             />
@@ -729,9 +730,9 @@
             </button>
           </div>
           <!-- /.activities-card -->
-          <div class="activities-card activities__card" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="200">
+          <div class="activities-card activities__card" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="100">
             <img
-              src="img/activities/card-2.jpg"
+              data-src="img/activities/card-2.jpg"
               alt="image: club golf course"
               class="activities-card__img"
             />
@@ -743,9 +744,9 @@
             </button>
           </div>
           <!-- /.activities-card -->
-          <div class="activities-card activities__card" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="400">
+          <div class="activities-card activities__card" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="200">
             <img
-              src="img/activities/card-3.jpg"
+              data-src="img/activities/card-3.jpg"
               alt="image: trip - full day"
               class="activities-card__img"
             />
@@ -758,9 +759,9 @@
             </button>
           </div>
           <!-- /.activities-card -->
-          <div class="activities-card activities__card" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="600">
+          <div class="activities-card activities__card" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="300">
             <img
-              src="img/activities/card-4.jpg"
+              data-src="img/activities/card-4.jpg"
               alt="image: discovery quest"
               class="activities-card__img"
             />

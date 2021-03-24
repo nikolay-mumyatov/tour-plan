@@ -5,6 +5,7 @@ let path = {
     // готовые файлы проекта
     html: project_folder + "/",
     php: project_folder + "/",
+    phpmaler: project_folder + "/php/",
     css: project_folder + "/css/",
     js: project_folder + "/js/",
     img: project_folder + "/img/",
@@ -59,6 +60,12 @@ function html() {
     src(path.src.html).pipe(dest(path.build.html)),
     src(path.src.php).pipe(dest(path.build.php)).pipe(browsersync.stream())
   );
+}
+
+function phpmaler() {
+  return (src("./php/**/*.php"))
+    .pipe(dest(path.build.phpmaler)
+    );
 }
 
 // получение стилей слайдера в проект
@@ -148,10 +155,11 @@ gulp.task("del", () => {
   return del([project_folder]);
 });
 
-let build = gulp.series(clean,gulp.parallel(slider, css, js, html, fonts, images));
+let build = gulp.series(clean,gulp.parallel(slider, css, js, html, phpmaler, fonts, images));
 let watch = gulp.parallel(build, browserSync);
 
 // привязка переменных к gulp
+exports.phpmaler = phpmaler;
 exports.slider = slider;
 exports.images = images;
 exports.js = js;
