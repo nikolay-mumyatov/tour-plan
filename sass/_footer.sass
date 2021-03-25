@@ -35,6 +35,11 @@
 			display: flex
 			align-items: start
 		&__img
+			width: 20px
+			height: 20px
+			fill: $grey-color
+			&:hover
+				fill: $red-color
 			&:not(last-child)
 				margin-right: 12px
 		&-mr
@@ -46,7 +51,8 @@
 	&-contact
 		grid-column: span 2
 		&-mb
-			margin-top: 10px
+			margin-top: 14px
+			letter-spacing: -1px
 			margin-bottom: 25px
 		&__wrapper
 			margin-top: 22px
@@ -68,7 +74,12 @@
 					color: $red-color
 
 		&__img
-			width: 35px
+			width: 41px
+			position: relative
+			& img
+				position: absolute
+				top: 0
+				left: 0
 		&__text
 			display: block
 			font-style: normal
@@ -89,7 +100,8 @@
 		justify-content: space-between
 		align-items: center
 		flex-wrap: wrap
-		margin-top: 25px
+		margin-top: 28px
+		margin-left: 2px
 		&__message
 			outline: none
 		&-box
@@ -159,7 +171,7 @@
 		font-style: normal
 		font-weight: normal
 		font-size: 14px
-		line-height: 160%
+		line-height: 156%
 		&:hover
 			color: $red-color
 
