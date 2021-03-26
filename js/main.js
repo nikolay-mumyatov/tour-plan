@@ -1,5 +1,7 @@
 // Css animation
-AOS.init();
+AOS.init({
+  disable: window.innerWidth < 768
+});
 
 // settings slider
 const hotelSlider = new Swiper(".hotel-info-container", {
