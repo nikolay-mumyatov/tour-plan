@@ -51,6 +51,29 @@ burgerLine.forEach(function (line) {
   });
 });
 
+// lazy load map
+let map_container = document.getElementById('map');
+let options_map = {
+    once: true,
+    passive: true,
+    capture: true
+};
+map_container.addEventListener('click', start_lazy_map, options_map);
+map_container.addEventListener('mouseover', start_lazy_map, options_map);
+map_container.addEventListener('touchstart', start_lazy_map, options_map);
+map_container.addEventListener('touchmove', start_lazy_map, options_map);
+
+let map_loaded = false;
+function start_lazy_map() {
+    if (!map_loaded) {
+        let map_block = document.getElementById('lazy');
+        map_loaded = true;
+        map_block.setAttribute('src', map_block.getAttribute('data-src'));
+        map_block.removeAttribute('data-src');
+        console.log('GOOGLE LOADED');
+    }
+}
+
 // form validation
 
 $(".form").each(function () {
