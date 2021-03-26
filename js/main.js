@@ -55,26 +55,12 @@ burgerLine.forEach(function (line) {
 
 // lazy load map
 let map_container = document.getElementById('map');
-let options_map = {
-    once: true,
-    passive: true,
-    capture: true
-};
-map_container.addEventListener('click', start_lazy_map, options_map);
-map_container.addEventListener('mouseover', start_lazy_map, options_map);
-map_container.addEventListener('touchstart', start_lazy_map, options_map);
-map_container.addEventListener('touchmove', start_lazy_map, options_map);
 
-let map_loaded = false;
-function start_lazy_map() {
-    if (!map_loaded) {
-        let map_block = document.getElementById('lazy');
-        map_loaded = true;
-        map_block.setAttribute('src', map_block.getAttribute('data-src'));
-        map_block.removeAttribute('data-src');
-        console.log('GOOGLE LOADED');
-    }
-}
+map_container.addEventListener('mouseover', function() {
+  map_container.insertAdjacentHTML('afterBegin', 
+  '<iframe id="lazy" class="map__size" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6307.44741635654!2d-122.4186161557082!3d37.77307614436112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1615206593579!5m2!1sru!2sru" width="350" height="213" style="border: 0" allowfullscreen="" loading="lazy" ></iframe>');
+}, {once: true});
+
 
 // form validation
 
